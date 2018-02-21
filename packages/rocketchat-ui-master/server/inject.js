@@ -95,9 +95,9 @@ RocketChat.settings.get('Accounts_ForgetUserSessionOnWindowClose', (key, value) 
 	}
 });
 
-RocketChat.settings.get('Site_Name', (key, value = 'Vivace Medical Connect') => {
+RocketChat.settings.get('Site_Name', (key, value = 'Rocket.Chat') => {
 	Inject.rawHead(key,
-		`<title>${ value }</title>` +
+		`<title>Vivace Medical Connect</title>` +
 		`<meta name="application-name" content="${ value }">` +
 		`<meta name="apple-mobile-web-app-title" content="${ value }">`);
 });
